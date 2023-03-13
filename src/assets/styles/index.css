@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  /* Layout */
+  --mobile-breakpoint: 375px;
+  --desktop-breakpoint: 1440px;
+
+  /* Colors */
+  --primary-color: hsl(25, 97%, 53%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  /* Typography */
+  --primary-font: 'Overpass', sans-serif;
+
+  /* Gradient */
+  --card-gradient: radial-gradient(circle at 50% 0%,
+      var(--dark-blue) 0%,
+      hsl(213, 19%, 10%) 100%);
+
+  /* ---- Root ---- */
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--medium-grey);
+  background-color: var(--very-dark-blue);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p {
+  font-size: .9375rem;
+}
+
+@import './App.css';

@@ -1,0 +1,153 @@
+#root {
+  max-width: var(--desktop-breakpoint);
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  height: 415px;
+  /* padding: 34px; */
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  background: var(--card-gradient);
+  margin: 0;
+}
+
+.card .star {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  margin-bottom: 30px;
+}
+
+.card h1 {
+  font-size: 1.7rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.card p {
+  margin-top: .7rem;
+  margin-bottom: 1.7rem;
+}
+
+.card .ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .ratings a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--medium-grey);
+  cursor: pointer;
+  transition: 450ms background-color;
+}
+
+.card .ratings a:hover {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+
+.card .ratings a.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.card button {
+  background: none;
+  border: none;
+  margin-top: 2.1rem;
+  margin-bottom: 1.3rem;
+  height: 45px;
+  width: 100%;
+  border-radius: 50px;
+  outline: none;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.card button:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.card button:disabled {
+  color: var(--white);
+  cursor: not-allowed;
+}
+
+.card .thankyou-section {
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .thankyou-section img {
+  margin-top: .75rem;
+}
+
+.card .rating-display {
+  margin-block: 1.875rem;
+  padding-block: .3rem;
+  padding-inline: 1rem;
+  border-radius: 1rem;
+  background-color: var(--dark-blue);
+  color: var(--primary-color);
+}
+
+.card .thankyou-section p {
+  text-align: center;
+}
+
+.card .rating-section,
+.card .thankyou-section {
+  position: absolute;
+  width: 100%;
+  padding: 34px;
+  transition: top 450ms;
+}
+
+.card .thankyou-section {
+  top: 100%;
+}
+
+.card.thankyou .rating-section {
+  top: -100%;
+}
+
+.card.thankyou .thankyou-section {
+  top: 0%;
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+@media only screen and (min-width: var(--mobile-breakpoint)) {
+  .card {
+    width: 412px;
+  }
+}
