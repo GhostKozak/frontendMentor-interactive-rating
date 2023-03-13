@@ -17,6 +17,10 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
+### Links
+
+- Solution URL: [Github](https://github.com/GhostKozak/frontendMentor-interactive-rating)
+- Live Site URL: [Vercel](https://frontend-mentor-interactive-rating.vercel.app/)
 
 ## My process
 
